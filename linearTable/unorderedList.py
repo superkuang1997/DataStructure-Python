@@ -1,7 +1,7 @@
 from node import Node
 
 
-class UnorderList():
+class UnorderedList():
     def __init__(self):
         self.head = None   # head表示表头，表示对第一个节点的引用信息
 
