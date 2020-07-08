@@ -22,7 +22,7 @@ def bfs(start):
         currentVert.setColor("black")
 
 
-def traverse(graph, target):
+def traceback(graph, target):
     trace = graph.getVertex(target)
     while trace.getPred():
         print(trace.getID())
@@ -34,4 +34,4 @@ if __name__ == "__main__":
     g = createBucket("fourletterwords.txt")
     start = g.getVertex("FUCK")
     bfs(start)
-    traverse(g, "PUMP")
+    traceback(g, "PUMP")

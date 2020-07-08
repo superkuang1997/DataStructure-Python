@@ -64,6 +64,9 @@ class BinaryHeap:
             self.perDown(i)
             i -= 1
 
+    def isEmpty(self):
+        return self.currentSize == 0
+
 
 if __name__ == "__main__":
     bh = BinaryHeap()
